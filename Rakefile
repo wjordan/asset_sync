@@ -7,6 +7,10 @@ rescue LoadError
 end
 require 'rspec/core/rake_task'
 
+require 'jeweler'
+Jeweler::Tasks.new do |gem|
+end
+
 namespace :spec do
   RSpec::Core::RakeTask.new(:unit) do |spec|
     spec.pattern = 'spec/unit/*_spec.rb'
